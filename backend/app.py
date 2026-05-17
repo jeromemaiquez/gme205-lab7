@@ -86,7 +86,7 @@ def get_parcels():
                 ASS_ACTUAL,
                 ASS_CLASSI,
                 ST_AsGeoJSON(ST_Force2D(geom)) AS geometry
-            FROM parcel;
+            FROM parcels;
         """
 
         cursor.execute(query)
